@@ -20,4 +20,5 @@ class BmiKotlinActivity : AppCompatActivity() {
             binding3.resultLabel.text="키: ${binding3.tallField.text}, 체중: ${binding3.weightField.text},BMI: $bmi"
         }
     }
+
 }
