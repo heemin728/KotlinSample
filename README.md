@@ -1,3 +1,3 @@
 # KotlinSample
 
-**java,kotlin-bmi계산앱**
+**android app programming**
