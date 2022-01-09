@@ -27,5 +27,14 @@ class MainActivity : AppCompatActivity() { // :는 자바에서 extends 와 같�
         binding.button2.setOnClickListener{
             startActivity(Intent(this@MainActivity,BmiKotlinActivity::class.java))
         }
+        //
+        binding.button3.setOnClickListener{
+            // Intent 로 VariableJavaActivity 를 타겟으로 지정하고 startActivity 로 실행
+            startActivity(Intent(this@MainActivity,VariableJavaActivity::class.java))
+        }
+
+        binding.button4.setOnClickListener(){
+            startActivity(Intent(this@MainActivity,VariableKotlinActivity::class.java))
+        }
     }
 }

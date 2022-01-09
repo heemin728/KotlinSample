@@ -10,7 +10,16 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.KotlinSample">
+        <activity
+                android:name=".VariableKotlinActivity"
+                android:exported="true"
+                android:label="variableKotlin">
+        </activity>
 
+        <activity
+                android:name=".VariableJavaActivity"
+                android:exported="true"
+                android:label="variableJava"/>
         <activity
                 android:name=".MainActivity"
                 android:exported="true">
@@ -22,13 +31,12 @@
         </activity>
         <activity
                 android:name=".BmiKotlinActivity"
-                android:label="BmiKotlinActivity"
-                android:exported="true"/>
+                android:exported="true"
+                android:label="BmiKotlinActivity"/>
         <activity
                 android:name=".BmiJavaActivity"
-                android:label="BmiJavaActivity"
-                android:exported="true"/>
-
+                android:exported="true"
+                android:label="BmiJavaActivity"/>
     </application>
 
 </manifest>
