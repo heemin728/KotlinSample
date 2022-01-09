@@ -77,4 +77,10 @@ public class JavaTest {
 
         Assert.assertEquals(fruitJava1.hashCode(),fruitJava2.hashCode());
     }
+    @Test
+    public void testExtFunc(){
+        // 자바에서 코틀린의 확장함수 호출 방법은 최상위 함수 호출 방법과 같음
+        String lastString=StringExtKt.lastString("apple");
+        Assert.assertEquals("e",lastString);
+    }
 }

@@ -125,4 +125,10 @@ class KotlinTest {
         // flatmap 으로 리스트를 평평학 만들고 반환
         println(list2.flatMap { it.toList() })
     }
+    @Test
+    fun testExtensions(){
+        val str="Hello, extensions"
+        // lastString() 함수를 원래 String 클래스의 메소드처럼 사용
+        Assert.assertEquals("s",str.lastString())
+    }
 }
