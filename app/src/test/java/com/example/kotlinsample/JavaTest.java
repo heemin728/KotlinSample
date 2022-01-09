@@ -83,4 +83,20 @@ public class JavaTest {
         String lastString=StringExtKt.lastString("apple");
         Assert.assertEquals("e",lastString);
     }
+    @Test
+    public void testNPE1(){
+        NPE npe=new NPE();
+        // 3글자 단어를 함수에 전달
+        Assert.assertEquals(3,npe.strLen("abc"));
+        // null 을 전달
+        Assert.assertEquals(0,npe.strLen(null));
+        // 예외 발생
+
+        // null 은 String 타입 변수에 할당할 수는 있찌만, String 타입은 아님.
+
+    }
+    @Test
+    public void testNullType(){
+        Assert.assertEquals(true, null instanceof String);
+    }
 }
